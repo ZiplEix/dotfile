@@ -116,6 +116,12 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/lib
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/baptiste/flutter/bin
 
+# App setup
+# Syntaxe highlighting fot man using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# Add visual studio code to path (code) (only for MacOS)
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
