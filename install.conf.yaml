@@ -11,5 +11,9 @@
 - create:
     - ~/delivery
 
-# - shell:
-#   - [git submodule update --init --recursive, Installing submodules]
+- shell:
+    # - [git submodule update --init --recursive, Installing submodules]
+    - 
+      command: echo "Hello World"
+      stdout: true
+    - sleep 2
