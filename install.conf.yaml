@@ -7,6 +7,10 @@
 - link:
     ~/.zshrc:
     ~/.gitconfig:
+    ~/.gitconfig:
+    ~/.config:
+      create: true
+      path: config
 
 - create:
     - ~/delivery
