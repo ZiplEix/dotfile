@@ -1,12 +1,10 @@
-#Taps
 tap "homebrew/bundle"
-
-# Brews (Packages)
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Modern replacement for 'ls'
 brew "exa"
+# Distributed revision control system
 brew "git"
+# User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-
-# Casks (Apps)
-cask "google-chrome"
-cask "visual-studio-code"
+vscode "Command is only available in WSL or inside a Visual Studio Code terminal."
