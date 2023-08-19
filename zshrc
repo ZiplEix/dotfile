@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Own aliases
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
 alias cc='clear'
 alias gta='git add'
 alias gtc='git commit -m'
@@ -115,6 +117,14 @@ alias server='cd /home/baptiste/delivery/tek2/zappy/server'
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/libs/myteams
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/baptiste/flutter/bin
+
+# App setup
+# Syntaxe highlighting fot man using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# automatique no garantine option for homebrew
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+# Add visual studio code to path (code) (only for MacOS)
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

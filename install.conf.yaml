@@ -12,8 +12,7 @@
     - ~/delivery
 
 - shell:
-    # - [git submodule update --init --recursive, Installing submodules]
-    - 
-      command: echo "Hello World"
+    -
+      command: ./setup_homebrew.zsh
       stdout: true
-    - sleep 2
+      stderr: true
