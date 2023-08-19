@@ -119,6 +119,8 @@ export PATH=$PATH:/home/baptiste/flutter/bin
 # App setup
 # Syntaxe highlighting fot man using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# automatique no garantine option for homebrew
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Add visual studio code to path (code) (only for MacOS)
 # export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
