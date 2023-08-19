@@ -10,6 +10,10 @@ brew "git"
 brew "httpie"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Vi 'workalike' with many additional features
+brew "vim"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
 vscode "Command is only available in WSL or inside a Visual Studio Code terminal."
