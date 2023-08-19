@@ -1,4 +1,4 @@
-# This file is my zshrc configuration file.
+# zshrc configuration file.
 
 # Set the path to the oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
