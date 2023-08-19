@@ -110,7 +110,7 @@ alias gta='git add'
 alias gtc='git commit -m'
 alias gtp='git push'
 alias cdd='cd /home/baptiste/delivery/tek2'
-alias server='cd /home/baptiste/delivery/tek2/zappy/server'
+alias man='batman'
 
 [ -f "/home/baptiste/.ghcup/env" ] && source "/home/baptiste/.ghcup/env" # ghcup-env
 
@@ -119,8 +119,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/baptiste/flutter/bin
 
 # App setup
-# Syntaxe highlighting fot man using bat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # automatique no garantine option for homebrew
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Add visual studio code to path (code) (only for MacOS)

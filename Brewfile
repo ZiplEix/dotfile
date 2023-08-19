@@ -1,3 +1,4 @@
+tap "eth-p/software"
 tap "homebrew/bundle"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -7,4 +8,6 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Bash scripts that integrate bat with various command-line tools
+brew "eth-p/software/bat-extras"
 vscode "Command is only available in WSL or inside a Visual Studio Code terminal."
