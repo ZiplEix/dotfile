@@ -8,6 +8,8 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
 vscode "Command is only available in WSL or inside a Visual Studio Code terminal."
