@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Own aliases
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
 alias cc='clear'
 alias gta='git add'
 alias gtc='git commit -m'
