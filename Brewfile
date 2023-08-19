@@ -4,6 +4,7 @@ tap "homebrew/bundle"
 # Brews (Packages)
 brew "bat"
 brew "exa"
+brew "git"
 brew "httpie"
 
 # Casks (Apps)
