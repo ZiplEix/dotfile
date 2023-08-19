@@ -42,7 +42,7 @@ export NVM_DIR="$HOME/.nvm"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# Define a custom function.
+# Define custom functions.
 function mkcd() {
     mkdir -p "$@" && cd "$_"
 }
