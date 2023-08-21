@@ -14,6 +14,8 @@ brew "less"
 brew "nano"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Terminal multiplexer
+brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Bash scripts that integrate bat with various command-line tools

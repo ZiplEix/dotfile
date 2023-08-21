@@ -8,10 +8,10 @@
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
-    ~/.gitconfig:
     ~/.config:
       create: true
       path: config
+    ~/.tmux.conf:
 
 - create:
     - ~/delivery
