@@ -18,6 +18,8 @@ brew "neovim"
 brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
 vscode "Command is only available in WSL or inside a Visual Studio Code terminal."
