@@ -20,6 +20,13 @@ else
     chsh -s $(which zsh)
 fi
 
+if [ "$ZSH_VERSION" != "" ]; then
+    echo "OH_MY_ZSH is already installed."
+else
+    echo "OH_MY_ZSH isn't installed yet. Installing it now."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 # Change default sh to zsh
 # if sh --version | grep -q 'zsh'; then
 #     echo "ZSH is already the default shell."
