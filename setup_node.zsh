@@ -11,6 +11,5 @@ if exists node; then
     echo "Node $(node --version) & NPM $(npm --version) already installed."
 else
     echo "Installing Node & NPM with nvm..."
-    # nvm install --lts --latest-npm
-    nvm install 18.15.1
+    nvm install --lts --latest-npm
 fi
