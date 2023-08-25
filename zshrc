@@ -28,6 +28,7 @@ alias gtp='git push'
 alias cdd='cd /home/baptiste/delivery/tek2'
 alias man='batman'
 alias bbd='brew bundle dump --force --describe'
+alias trail='bat <<<${(F)path}'
 
 # Set some environment variables.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/libs/myteams
