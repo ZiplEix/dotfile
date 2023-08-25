@@ -15,6 +15,7 @@ else
 fi
 
 # Install Global NPM Packages
+npm install --global yarn
 npm install --global firebase-tools
 npm install --global typescript
 
