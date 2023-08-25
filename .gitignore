@@ -1,1 +1,5 @@
 Brewfile.lock.json
+config/configstore/
+config/fish/
+config/htop/
+config/ghc/
