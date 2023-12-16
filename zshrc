@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set some personal aliases.
 alias ls='exa -laFh --git'
-alias exa='exa -laFh --git'
+# alias exa='exa -laFh --git'
 alias cc='clear'
 alias gta='git add'
 alias gtc='git commit -m'
@@ -47,4 +47,16 @@ export PATH=$PATH:$GOPATH/bin
 # Define custom functions.
 function mkcd() {
     mkdir -p "$@" && cd "$_"
+}
+
+apt() {
+    command nala "$@"
+}
+sudo() {
+    if [ "$1" = "apt" ]; then
+        shift
+        command sudo nala "$@"
+    else
+        command sudo "$@"
+    fi
 }
