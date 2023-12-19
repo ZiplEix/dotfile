@@ -1,7 +1,7 @@
 ---
 title: Dotfile
 description: A dotfile repo to easily setup a new MacOd or Linux based operating systeme
-date: "19-112-2023"
+date: "19-12-2023"
 categories:
   - "dotfile"
   - "configuration"
