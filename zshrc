@@ -19,8 +19,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Set some personal aliases.
-alias ls='exa -laFh --git'
+# alias ls='exa -laFh --git'
 # alias exa='exa -laFh --git'
+alias ls='exa -laFh'
+alias exa='exa -laFh'
 alias cc='clear'
 alias gta='git add'
 alias gtc='git commit -m'
@@ -60,3 +62,11 @@ sudo() {
         command sudo "$@"
     fi
 }
+
+# pnpm
+export PNPM_HOME="/home/baptiste/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
