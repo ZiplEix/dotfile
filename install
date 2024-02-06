@@ -1,15 +1,54 @@
 #!/usr/bin/env bash
 
-set -e
+# determine the package manager
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+    if [ "$ID" = "debian" ] || [ "$ID" = "ubuntu" ]; then
+        package_manager="apt"
+    elif [ "$ID" = "centos" ]; then
+        package_manager="yum"
+    elif [ "$ID" = "fedora" ]; then
+        package_manager="dnf"
+    elif [ "$ID" = "opensuse" ] || [ "$ID" = "opensuse-leap" ]; then
+        package_manager="zypper"
+    elif [ "$ID" = "arch" ] || [ "$ID" = "manjaro" ]; then
+        package_manager="pacman"
+    else
+        echo "Distribution non prise en charge."
+        exit 1
+    fi
+else
+    echo "Impossible de déterminer la distribution."
+    exit 1
+fi
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+installation_command="sudo $package_manager"
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ "$package_manager" == "pacman" ]; then
+    installation_command="$installation_command -S "
+else
+    installation_command="$installation_command install "
+fi
 
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+# install git if not already installed
+if ! command -v git &> /dev/null; then
+    $installation_command git
+else
+    echo "git est déjà installé."
+fi
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+# clone the repository
+# git clone git@github.com:ZiplEix/dotfile.git ~/.dotfiles
+
+# go to the repository
+cd ~/.dotfiles
+
+# install gnu stow if not already installed
+if ! command -v stow &> /dev/null; then
+    $installation_command stow
+else
+    echo "stow est déjà installé."
+fi
+
+# create the symbolic links
+stow .
