@@ -2,8 +2,6 @@
 
 echo "\n<<< Starting ZSH Setup >>>\n"
 
-# Installation Unnecessary; already done in the Brewfile
-
 if grep -Fxq "$(which zsh)" /etc/shells; then
     echo "$(which zsh) is already in /etc/shells."
 else

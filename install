@@ -52,3 +52,10 @@ fi
 
 # create the symbolic links
 stow .
+
+# setup ZSH & oh my zsh
+./script/setup_zsh.zsh
+
+# setup nvm & node
+./script/setup_nvm.zsh
+./script/setup_node.zsh
