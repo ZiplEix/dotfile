@@ -1,5 +1,5 @@
 ---
-title: Dotfile
+title: Dotfile V2
 description: A dotfile repo to easily setup a new MacOs or Linux based operating systeme
 date: "06-02-2024"
 categories:
