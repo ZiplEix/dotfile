@@ -29,10 +29,12 @@ alias gtc='git commit -m'
 alias gtp='git push'
 alias cdd='cd /home/baptiste/delivery/tek2'
 # alias man='batman'
-alias bbd='brew bundle dump --force --describe'
 alias trail='bat <<<${(F)path}'
 alias code='/mnt/c/Users/leroy/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
 alias bat='batcat'
+
+# GitHub Copilot CLI Aliases
+echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
 
 # Set some environment variables.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/libs/myteams
@@ -76,3 +78,4 @@ esac
 # pnpm end
 
 [[ -s "/home/baptiste/.gvm/scripts/gvm" ]] && source "/home/baptiste/.gvm/scripts/gvm"
+eval "$(gh copilot alias -- zsh)"
