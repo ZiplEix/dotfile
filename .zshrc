@@ -34,7 +34,8 @@ alias code='/mnt/c/Users/leroy/AppData/Local/Programs/Microsoft\ VS\ Code/bin/co
 alias bat='batcat'
 
 # GitHub Copilot CLI Aliases
-echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
+eval "$(gh copilot alias -- zsh)"
+# alias gh
 
 # Set some environment variables.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/libs/myteams
@@ -77,5 +78,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# gvm
 [[ -s "/home/baptiste/.gvm/scripts/gvm" ]] && source "/home/baptiste/.gvm/scripts/gvm"
-eval "$(gh copilot alias -- zsh)"
+# gvm end
