@@ -33,10 +33,6 @@ alias trail='bat <<<${(F)path}'
 alias code='/mnt/c/Users/leroy/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
 alias bat='batcat'
 
-# GitHub Copilot CLI Aliases
-eval "$(gh copilot alias -- zsh)"
-# alias gh
-
 # Set some environment variables.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/baptiste/delivery/tek2/myteams/libs/myteams
 export PATH=$PATH:/usr/local/go/bin
@@ -57,26 +53,6 @@ export PATH=$PATH:$GOPATH/bin
 function mkcd() {
     mkdir -p "$@" && cd "$_"
 }
-
-apt() {
-    command nala "$@"
-}
-sudo() {
-    if [ "$1" = "apt" ]; then
-        shift
-        command sudo nala "$@"
-    else
-        command sudo "$@"
-    fi
-}
-
-# pnpm
-export PNPM_HOME="/home/baptiste/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # gvm
 [[ -s "/home/baptiste/.gvm/scripts/gvm" ]] && source "/home/baptiste/.gvm/scripts/gvm"

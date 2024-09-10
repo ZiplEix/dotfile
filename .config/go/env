@@ -1,2 +1,0 @@
-GOPRIVATE=code.waarp.fr/apps/waarp-key
-GOPROXY=https://proxy.golang.org,direct
